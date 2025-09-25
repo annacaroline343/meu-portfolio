@@ -11,7 +11,7 @@
     --menu-link: rgb(55, 71, 124);
 
     --cor-icone: #856db1;
-    --cor-borda:  black; 
+    --cor-borda: black;
 
 
 
@@ -23,7 +23,7 @@
     --menu-link: rgb(57, 71, 114);
 
     --cor-icone: #0f838b;
-    --cor-borda: white ;
+    --cor-borda: white;
 }
 
 
@@ -144,8 +144,10 @@ header {
 
 
 .menu-mobile
+
 /*  nav */
-.menu-list {   /*  UL */
+.menu-list {
+    /*  UL */
     display: flex;
     flex-direction: column;
     /* EIXO v  */
@@ -154,17 +156,37 @@ header {
     padding: 1rem 1rem 2rem;
 
 }
-.logo{
-    width: 2.75rem; /* comprimento */
-    height:1.75rem;/* altura */
+
+.logo {
+    width: 2.75rem;
+    /* comprimento */
+    height: 1.75rem;
+    /* altura */
 }
 
-.header-toggle{
-display: flex;
-justify-content: flex-end;
-align-items: center;
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
 }
+
+#home {
+    padding: 5.1rem 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    gap: 1.0rem;
+}
+
+h1 {
+    font-size: 1.7rem;
+
+}
+
 
 
 /* Medidas Responsivas */
@@ -183,4 +205,28 @@ align-items: center;
         min-width: 30%;
     }
 
+    header {
+        
+    }
+
+    #home {
+        padding: 1rem 3rem 4rem 1rem;
+    }
+    
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* FIM min 768px */
+
+@media(min-width:1400px) {
+    h1 {
+        font-size: 6.5rem;
+    }
 }
