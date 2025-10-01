@@ -5,7 +5,7 @@
 /* raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: rgb(128, 122, 122);
+    --cor-fundo: rgb(51, 40, 40);
     --cor-texto: rgb(228, 228, 228);
 
     --menu-link: rgb(55, 71, 124);
@@ -57,13 +57,16 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: rgb(247, 245, 247);
-    border-bottom: 5px solid rgb(154, 179, 199);
+    background: rgb(202, 191, 191);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    position: fixed; /* Voltar */
+    z-index: 9999; /* Camadas */
+    padding: .5rem 1rem;
 
 }
 
 .menu-desktop {
-    background: rgb(245, 246, 249);
+    background: rgb(202, 191, 191);
     display: none;
     /*  esconde o menu desktop */
 
@@ -183,7 +186,7 @@ header {
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 
 }
 
