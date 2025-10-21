@@ -1,4 +1,8 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 /* CSS Externo */
+
 
 /* Definir as cores Tema Dark */
 /* raiz */
@@ -196,10 +200,32 @@ botao menu mobile  ----- */
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+
 }
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.55rem;
+    font-family: Impact, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
 
 .video iframe {
     aspect-ratio: 16/9;
+    font-family: "BBH Sans Hegarty", sans-serif;
 }
 
 #home,
@@ -212,11 +238,10 @@ h1 {
 .descricao-video {
     display: flex;
     flex-direction: column;
-    background: aqua;
+    background: #0099ff;
     padding: 6.25rem 1rem 2rem;
     align-items: center;
     justify-content: flex-start;
-    text-align: justify;
     margin-top: -6.5rem;
 }
 
@@ -234,73 +259,122 @@ h1 {
     gap: 2rem;
 }
 
-.servicos-container{
+.servicos-container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
-.servico-card{
-display: flex;
-flex-direction: column;
-gap: 2rem;
+
+.servico-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.img-card{
+.img-card {
     width: 100%;
     border-radius: .5rem;
 }
+
 .card-body {
     display: flex;
-    flex-direction:column ;
-    justify-content:flex-start ;
-    align-items:flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 1rem;
-   
-}
-.card-title {
-color: black ; /* Cor do texto */
-font-size:   ;/* Tamanho texto */
-font-weight: ;/* Largura das letras */
-font-family: ;/* Estilo das fontes  */
+
 }
 
+.card-titulo {
+    color: rgb(0, 0, 0);
+    /* Cor do texto */
+    font-size: 1rem;
+    /* Tamanho texto */
+    font-weight: 2rem;
+    /* Largura das letras */
+    font-family: 'Courier New', Courier, monospace;
+    /* Estilo das fontes  */
+}
 
+.card-descricao {
+    color: blue;
+    /* cor do texto */
+    font-size: 1rem;
+    /* tamanho do texto */
+    font-weight: 2rem;
+    /* largura das letras */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* Estilo das fontes */
+}
 
+.card.lista {
+    color: rgb(64, 110, 95);
+    /* cor do texto */
+    font-size: 1rem;
+    /* tamanho das letras */
+    font-weight: 2rem;
+    /* largura das letras */
+    font-family: 'Courier New', Courier, monospace;
+    /* Estilo das fontes */
+}
 
 /* Medidas Responsivas */
+@media(max-width: 768px) {
+    #home {
+        padding-top: 6rem;
+    }
+}
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
-    display: flex;
-    min-width: 30%;
+    .menu-desktop {
+        display: flex;
+        min-width: 30%;
+    }
+
+    .btn-menu-mobile {
+        display: none;
+    }
+
+    .header-toggle {
+        min-width: 30%;
+        /* alinhar o logo */
+    }
+
+    header {
+        padding: 1rem 6rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+h3{
+    font-size:2rem ;
 }
 
-.btn-menu-mobile {
-    display: none;
-}
+    #home,
+    .projetos,
+    .sobre,
+    .contato {
+        padding: 2.5rem 1rem;
+    }
 
-.header-toggle {
-    min-width: 30%;
-    /* alinhar o logo */
-}
-
-header {
-    padding: 1rem 6rem;
-}
-
-h1 {
-    font-size: 5rem;
-}
-
-#home,
-.projetos,
-.sobre,
-.contato {
-    padding: 2.5rem 1rem;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* FIM min 768px */
@@ -317,10 +391,22 @@ h1 {
 
 }
 
+@media(min-width: 1200px) {
+    h2 {
+        font-size: 4rem;
+    }
+
+}
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 6.5rem;
     }
+
+    h2 {
+        font-size: 4.5;
+    }
+
 
     .descricao-video,
     .servicos,
