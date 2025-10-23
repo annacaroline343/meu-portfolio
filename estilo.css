@@ -14,16 +14,20 @@
 
     --cor-borda: #e9e9e9;
 
+    --color-hover-icone: blue;
+
+    --color-hover-instagram: pink;
 }
 
 /* Fundo Branco */
 :root[data-theme='light'] {
-    --cor-fundo: #581d1d;
+    --cor-fundo: #c8c6c6;
     --cor-texto: #1b1b1b;
     --menu-link: #1b1b1b;
 
     --cor-borda: #1b1b1b;
 
+    --color-hover-icone: pink;
 }
 
 /* Inverter Cor LOGO = Filtro */
@@ -326,11 +330,21 @@ h3 {
     /* Estilo das fontes */
 }
 
-/* Medidas Responsivas */
-@media(max-width: 768px) {
-    #home {
-        padding-top: 6rem;
-    }
+.card-item i {
+    margin-left: 8px;
+}
+
+.card-item i:hover {
+    color: var(--color-hover-icone);
+    transition: .5s ease-in-out;
+}
+
+.redes-socias .instagram{
+    font-size: 200rem;
+}
+
+.redes-socias .instagram:hover {
+    color:pink;
 }
 
 
@@ -338,7 +352,12 @@ h3 {
 
 
 
-
+/* Medidas Responsivas */
+@media(max-width: 768px) {
+    #home {
+        padding-top: 6rem;
+    }
+}
 
 @media (min-width: 768px) {
     .menu-desktop {
