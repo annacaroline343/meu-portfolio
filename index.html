@@ -1,275 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ana Caroline - Portfolio </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Ana Caroline- Portfolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    
+
 
     <!-- CSS Externo -->
-    <link rel="stylesheet" href="estilo.css">
-</head>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
 
-<body>
-
-    <header> <!-- Cabeçalho -->
-
-        <nav class="menu-desktop"> <!-- Menu Desktop -->
-            <ul class="menu menu-principal">
-
-                <li class="menu-item">
-
-                    <a href="#home" class="menu-link">
-                        <span class="menu-text">Home</span>
-                    </a>
-
-                </li>
-                <li class="menu-item">
-                    <a href="#projetos" class="menu-link">
-                        <span class="menu-text">projetos</span>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#sobre" class="menu-link">
-                        <span class="menu-text">sobre</span>
-                    </a>
-                </li>
-
-                <li class="menu-item">
-                    <a href="#contato" class="menu-link">
-                        <span class="menu-text">contato</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- LOGO -->
-        <div class="header-logo">
-            <a href="">
-                <img src="img/logo.png" alt="" class="logo">
+  <body>
+    <header>
+      <!-- Cabeçalho -->
+      <nav class="menu-desktop">
+        <!-- Menu Desktop -->
+        <!-- Estrutura p/ Menu -->
+        <ul class="menu menu-principal">
+          <li class="menu-item">
+            <a href="#home" class="menu-link">
+              <span class="menu-text">home</span>
             </a>
-        </div>
+          </li>
+          <li class="menu-item">
+            <a href="#servicos" class="menu-link">
+              <span class="menu-text"> serviços </span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#sobre" class="menu-link">
+              <span class="menu-text">sobre</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="#contato" class="menu-link">
+              <span class="menu-text">contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- LOGO -->
+      <div class="header-logo"> <!-- area do logo -->
+            <a href="#home">
+                <img class="logo" src="img/Logo - site Afesu.png" alt="">
+            </a>
+        </div><!-- Fim area do logo -->
 
+      <!-- Trocar Cor Tema // Shift + ALT + A -->
+      <div class="header-toggle">
+        <!-- Icone SOL -->
+        <i class="bi bi-sun" id="toggleTheme"> </i>
 
-        <!-- Trocar Cor Tema // -->
-        <div class="header-toggle">
-            <!-- Icone SOL -->
-            <i class="bi bi-sun" id="toggleTheme"> </i>
-
-            <button id="menuHamburger" class="btn-menu-mobile">
-
-                <!-- Botão Mobile -->
-                <i class="bi bi-list"></i>
-
-            </button>
-        </div>
+        <button id="menuHamburger" class="btn-menu-mobile">
+          <!-- Botão Mobile -->
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
 
     </header>
 
     <!-- Estrutura Menu Mobile -->
     <nav class="menu-mobile menu menu-principal" id="menuMobile">
-        <ul class="menu-list">
-            <li class="menu-item">
-                <a href="#home" class="menu-link">
-                    <span class="menu-text"> home </span>
-                </a>
-            </li>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a href="#home" class="menu-link">
+            <span class="menu-text"> home </span>
+          </a>
+        </li>
 
-            <li class="menu-item">
-                <a href="projetos" class="menu-link">
-                    <span class="menu-text"> projetos </span>
-                </a>
-            </li>
+        <li class="menu-item">
+          <a href="#servicos" class="menu-link">
+            <span class="menu-text"> serviços </span>
+          </a>
+        </li>
 
-            <li class="menu-item">
-                <a href="#sobre" class="menu-link">
-                    <span class="menu-text"> sobre </span>
-                </a>
-            </li>
+        <li class="menu-item">
+          <a href="#sobre" class="menu-link">
+            <span class="menu-text"> sobre </span>
+          </a>
+        </li>
 
-            <li class="menu-item">
-                <a href="#contato" class="menu-link">
-                    <span class="menu-text"> contato </span>
-                </a>
-            </li>
-
-        </ul>
+        <li class="menu-item">
+          <a href="#contato" class="menu-link">
+            <span class="menu-text"> contato </span>
+          </a>
+        </li>
+      </ul>
     </nav>
 
     <main id="home">
 
-        <!-- Seção Principal -->
-        <section class="main-content">
-            <!-- Titulo - Principal -->
-            <h1>Intercâmbio </h1>
+    <!-- Seção Principal -->
+      <section class="main-content">
+        <!-- Título - Principal -->
+         <h1> Intercâmbio </h1>
 
-            <p> Conectamos você ao seu sonho de estudar no exterior. Encontre bolsas, universidades, dicas e histórias
-                reais que vão te inspirar a dar o próximo passo! </p>
+         <p> Conectamos você ao seu sonho de estudar no exterior. Encontre bolsas, universidades, dicas e histórias reais que vão te inspirar a dar o próximo passo! </p>
 
-            <ul class="menu redes-sociais">
+         <ul class="menu redes-sociais">
+          
+          <li> 
+            <a href=" https://annacaroline343.github.io/meu-portfolio/" class="menu-link" target="_blank">
+              
+              <i class="bi bi-github github"></i>
 
-                <li>
-                    <a href="https://instagram.com/gustavo.feriani" class="menu-link" target="_blank">
-                        <i class="bi bi-instagram instagram"></i>
-                    </a>
-                </li>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.instagram.com/" class="menu-link" target="_blank">
+              
+              <i class="bi bi-instagram instagram"></i>
 
-                <li>
-                    <a href="https://facebook.com" class="menu-link" target="_blank">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                </li>
+            </a>
+          </li>
+          <li> 
+            <a href="https://wa.me/5511961647781" class="menu-link" target="_blank">
+              
+              <i class="bi bi-whatsapp whatsapp"></i>
 
-                <li>
-                    <a href="https://wa.me/55119" class="menu-link" target="_blank">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
+            </a>
+          </li>
+          <li> 
+            <a href="https://www.facebook.com/?locale=pt_BR" class="menu-link" target="_blank">
+              
+              <i class="bi bi-facebook facebook"></i>
 
-        </section>
+            </a>
+          </li>
+        
 
-        <div class="video">
-            <iframe  src="https://www.youtube.com/embed/ZRgWsjY7-xI" title="COMO FAZER um INTERCÂMBIO de GRAÇA (ou quase) em 2025." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
-            
-        </div>
+          
+
+         </ul>
+
+
+
+
+      </section>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/apJWd7NEwLw" title="PASSO A PASSO DE COMO FAZER UM INTERCÂMBIO!! *contei tudo*" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     </main>
 
-    <!-- Projetos -->
-    <section class="projetos" id="projetos">
-        <h2> Projetos </h2>
-</section>
-
-        <div class="projetos-container">
-
-            <!-- Projeto 1 -->
-            <div class="projeto-card">
-
-                <img src="img/projetos/intercambio.jpg" alt="" class="img-card">
-
-                <div class="card-body">
-
-                    <h3 class="card-titulo">
-                        StudyGo
-                    </h3>
-
-                    <p class="card-descricao">
-
-
-                    </p>
-
-                    <ul class="card-lista">
-                        <li class="card-item">
-                            <i class="bi bi-airplane"></i>
-                            Estudar fora é o primeiro passo para viver o mundo.
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-globe"></i>
-                            Seu futuro não tem fronteiras — descubra onde ele pode te levar.
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-mortarboard"></i>
-                            Aprender é viajar sem sair dos seus sonhos.
-                        </li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <!-- Fim projeto 1 -->
-
-            <!-- Projeto 2 -->
-            <div class="projeto-card">
-
-                <img src="img/projetos/biblioteca.jpg" alt="" class="img-card">
-
-                <div class="card-body">
-
-                    <h3 class="card-titulo">
-                        StudyGo
-                    </h3>
-
-                    <p class="card-descricao">
-                        Loja online para vendas de Jogos Digitais.
-                    </p>
-
-                    <ul class="card-lista">
-                        <li class="card-item">
-                            <i class="bi bi-pc-display-horizontal"></i>
-                            Jogos para PC
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-playstation"></i>
-                            Jogos para Playstation 5
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-nintendo-switch"></i>
-                            Jogos para Nintendo Switch
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- fim projeto 2 -->
-
-                <!-- projeto 3 -->
-            </div>
-            <div class="projeto-card">
-
-                <img src="img/projetos/saladeaula.jpg" class="img-card">
-
-                <div class="card-body">
-
-                    <h3 class="card-titulo">
-                        StudyGo
-                    </h3>
-
-                    <p class="card-descricao">
-                       Conheça um pouco do ambiente de aprendizado que espera por você durante o intercâmbio:
-                    </p>
-
-                    <ul class="card-lista">
-                        <li class="card-item">
-                            <i class="bi bi-backpack-fill"></i>
-                            Ambiente multicultural favorece a troca de conhecimentos e experiências entre estudantes internacionais.
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-airplane-fill"></i>
-                            Aulas interativas e colaborativas contribuem para o desenvolvimento acadêmico e pessoal dos intercambistas.
-                        </li>
-
-                        <li class="card-item">
-                            <i class="bi bi-globe-americas-fill"></i>
-                            A diversidade em sala de aula enriquece o aprendizado, promovendo a integração global e o respeito entre culturas.
-                        </li>
-                    </ul>
-                    <!-- fim projeto 3 -->
-                </div>
+    <section class="descricao-video">
+      <h2>aprenda como planejar e conseguir seu Intercâmbio dos sonhos!</h2>
     </section>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+
+     <!-- Serviços -->
+    <section class="servicos" id="servicos">
+      <h2> Serviços </h2>
+
+      <div class="servicos-container">
+
+        <!-- Servico 1 -->
+         <div class="servico-card">
+
+
+          <img src="img/projetos/saladeaula.jpg" alt="Aprendizado sem fronteiras: estudantes de diferentes culturas trocando experiências em um ambiente moderno e inspirador." class="img-card">
+
+          <div class="card-body">
+
+            <h3 class="card-titulo">
+              Aprendizado sem fronteiras: estudantes de diferentes culturas trocando experiências em um ambiente moderno e inspirador.
+            </h3>
+
+            <p class="card-descricao">
+Estudantes de várias culturas aprendendo e trocando experiências em uma aula moderna e interativa.
+            </p>
+
+            <ul class="card-lista">
+              <li class="card-item">
+                <i class="bi-globe"></i>
+                Descubra novos países e culturas vivendo experiências únicas.
+              </li>
+              <li class="card-item">
+                <i class="bi-mortarboard"></i>
+                Estude em instituições internacionais e amplie seus horizontes.
+              </li>
+              <li class="card-item">
+                <i class="bi-airplane"></i>
+               Explore lugares incríveis enquanto aprende e cresce.
+              </li>
+            </ul>
+
+
+          </div>
+
+
+         </div>
+         <!-- Fim servico 1 -->
+
+         <div class="servico-card">
+
+
+          <img src="img/projetos/paris.jpg" alt="" class="img-card">
+
+
+
+          <div class="card-body">
+
+            <h3 class="card-titulo">
+              Helicóptero Águia da Polícia Militar de São Paulo
+            </h3>
+            <p class="card-descricao">
+              O helicóptero Águia apoia operações policiais e resgates.
+            </p>
+
+            <ul class="card-lista">
+              <li class="card-item">
+                <i class="bi bi-heart-pulse-fill"></i>
+                É utilizado em resgates e salvamentos em áreas de difícil acesso.
+              </li>
+              <li class="card-item">
+                <i class="bi bi-shield-exclamation"></i>
+                Auxilia no combate ao crime organizado.
+              </li>
+              <li class="card-item">
+                <i class="bi bi-geo-alt-fill"></i>
+               Transporta equipes táticas rapidamente para operações especiais.
+              </li>
+            </ul>
+
+
+          </div>
+
+
+         </div>
+         <!-- Fim servico 2 -->
+        
+
+      </div>
+
+      <div class="servico-card">
+
+
+          <img src="img/projetos/intercambio.jpg" alt="Policiais Militares Durantre a Pandemia" class="img-card">
+
+
+
+          <div class="card-body">
+
+            <h3 class="card-titulo">
+              Policiais Militares
+            </h3>
+            <p class="card-descricao">
+              Policiais militares protegem a população e mantêm a ordem.
+
+            </p>
+
+            <ul class="card-lista">
+              <li class="card-item">
+                <i class="bi bi-award"></i>
+                Policiais militares são concursados.
+              </li>
+              <li class="card-item">
+                <i class="bi bi-people-fill"></i>
+                Garantem a ordem pública.
+              </li>
+              <li class="card-item">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+               Previnem crimes e atendem emergências.
+
+              </li>
+            </ul>
+
+
+          </div>
+
+
+         </div>
+         <!-- Fim servico 3 -->
+        
+
+      </div>
+
+    </section>
+    <!-- Fim Serviços -->
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre Mim</h2>
+
+      <div class="container row">
+
+         <div class="col-lg-3 col-md6 col1">
+          <img src="img/projetos/biblioteca.jpg" alt="" width="300">
+         </div>
+        
+
+        <div class="col-lg-3 col-md6 col2">
+          Espaço para os textos e Tópicos
         </div>
+
+        <div class="col-lg-3 col-md6 col3">
+          Coluna 3
+        </div>
+
+        <div class="col-lg-3 col-md6 col4">
+          Coluna 4
+        </div>
+        
+      </div>
+
+
+
+    </section>
+
+    <!-- Contato -->
+     <section class="contato" id="contato">
+      <h2>Contato</h2>
+     </section>
+
+     <!-- Roda Pé -->
+      <footer>
+        <p>
+          &copy; 2025.
+        </p>
+      </footer>
+
+    <!-- Libras -->
+    <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
     </div>
-    <script src="https://vlibras.gov.br/app//vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget("https://vlibras.gov.br/app/");
-    </script>
+  </div>
+  <script src="https://vlibras.gov.br/app//vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app/");
+  </script>
 
-
+  <!-- Bootstrap JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
